@@ -1,0 +1,116 @@
+html {
+  height: 100%;
+  display: grid;
+}
+
+body {
+  margin: auto;
+  text-align: center;
+  width: 250px;
+  padding-bottom: 100px;
+}
+
+form {
+  margin-bottom: 10px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 10pt;
+  padding: 5px;
+  width: 238px;
+  border-radius: 3px;
+  box-shadow: 0 0 4px 1px #eee;
+}
+
+input {
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid #aaa;
+}
+
+button {
+  font-size: 10pt;
+  font-weight: bold;
+  box-shadow: 0 0 4px 1px #eee;
+}
+
+#resultContainer {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.error {
+  border: 1px solid red !important;
+}
+
+.progress {
+  overflow: hidden;
+  position: relative;
+}
+
+.progress::before, .progress::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+
+.progress::before {
+  top: 0;
+  left: 0;
+  border-top-color: #60daaa;
+  border-right-color: #60daaa;
+  animation: border 2s infinite;
+}
+
+.progress::after {
+  bottom: 0;
+  right: 0;
+  animation: border 2s 1s infinite, borderColor 2s 1s infinite;
+}
+
+@keyframes border {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  25% {
+    width: 100%;
+    height: 0;
+  }
+  50% {
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes borderColor {
+  0% {
+    border-bottom-color: #60daaa;
+    border-left-color: #60daaa;
+  }
+  50% {
+    border-bottom-color: #60daaa;
+    border-left-color: #60daaa;
+  }
+  51% {
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}

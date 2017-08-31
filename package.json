@@ -1,0 +1,19 @@
+{
+  "name": "yandex-nodejs-school",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NAlexandrov/yandex-nodejs-school.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NAlexandrov/yandex-nodejs-school/issues"
+  },
+  "homepage": "https://github.com/NAlexandrov/yandex-nodejs-school#readme"
+}
