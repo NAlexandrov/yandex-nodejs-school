@@ -57,4 +57,4 @@ function onRequest(req, res) {
     .catch(onError(res));
 }
 
-http.createServer(onRequest).listen(PORT, () => console.log(`Server listen on ${PORT}`));
+http.createServer(onRequest).listen(PORT, () => console.log(`Server listening on port ${PORT}`));
